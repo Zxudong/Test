@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XDThemeCell">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="92"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWl-mc-JNd">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="92"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FWl-mc-JNd" secondAttribute="bottom" id="1pI-Ih-7Ct"/>
+                <constraint firstItem="FWl-mc-JNd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CLE-Sa-evi"/>
+                <constraint firstAttribute="trailing" secondItem="FWl-mc-JNd" secondAttribute="trailing" id="MSU-74-fjf"/>
+                <constraint firstItem="FWl-mc-JNd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m0p-Ib-xID"/>
+            </constraints>
+            <size key="customSize" width="127" height="92"/>
+            <connections>
+                <outlet property="itemImageView" destination="FWl-mc-JNd" id="O3d-h9-xll"/>
+            </connections>
+            <point key="canvasLocation" x="-93" y="30"/>
+        </collectionViewCell>
+    </objects>
+</document>
